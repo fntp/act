@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-09T08:48:12.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="QSrmY0ccGXRmySd--cmb" version="21.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-09T09:04:12.496Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="qfLuATsBz6IbhL8SQcrL" version="21.8.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="954" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -116,7 +116,7 @@
         <mxCell id="b8Dm2GNeTuMyr9fDgbty-19" value="用户点击&lt;br&gt;写真制作" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="990" y="680" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="b8Dm2GNeTuMyr9fDgbty-21" value="系统推送三套" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="b8Dm2GNeTuMyr9fDgbty-21" value="系统推送三套&lt;br&gt;这个是在什么时候执行的？执行完模型生成后自动执行的吗" style="whiteSpace=wrap;html=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;fontColor=#eb1414;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="990" y="820" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
