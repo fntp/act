@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-11T02:17:15.550Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Rn3n3dRGhTYjRiidaYwD" version="22.0.4" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-10-11T02:46:50.444Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="p5a-RVVgttWDAUz2v0jB" version="22.0.4" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="业务流程">
     <mxGraphModel dx="954" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -640,6 +640,32 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K-8xH6GgUfQQmNVItXjM" name="美椰用户结构">
+    <mxGraphModel dx="954" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-2" value="用户id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-3" value="微信uniion_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="368" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-4" value="小程序open_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="428" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-5" value="公众号open_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="488" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BYq77BRGMXA5BypO-d9Y-6" value="手机号码" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="408" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ntC96D12weeUyDobIClu" name="模型篇">
     <mxGraphModel dx="954" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
