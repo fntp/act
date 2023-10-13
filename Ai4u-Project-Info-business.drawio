@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-13T08:05:33.945Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="McZ_bdPO8C557QbDy0Zv" version="22.0.4" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2023-10-13T08:22:08.820Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Gq_cLXcG4PI3T_9KEltU" version="22.0.4" type="github" pages="11">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="业务流程">
     <mxGraphModel dx="954" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1003,8 +1003,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="67EG4RPBH1GAo2O5dflQ" name="三方登陆接口设计方案">
-    <mxGraphModel dx="1559" dy="1554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="67EG4RPBH1GAo2O5dflQ" name="三方登陆设计-用例1">
+    <mxGraphModel dx="2556" dy="2080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1018,11 +1018,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="fTS5IwAaPlBZ80htm119-1" target="fTS5IwAaPlBZ80htm119-33">
+        <mxCell id="fTS5IwAaPlBZ80htm119-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-0.26923076923071676" y="253.99999999999977" as="sourcePoint" />
+            <mxPoint x="680" y="253.99999999999977" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="180" y="240" />
-              <mxPoint x="180" y="240" />
+              <mxPoint x="180" y="254" />
+              <mxPoint x="180" y="254" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1050,8 +1052,8 @@
         <mxCell id="fTS5IwAaPlBZ80htm119-8" value="1、direct-request-for-Google-Apple-FaceBook" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="20" y="88" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-13" value="1、2、3事件交互过程涉及需要关注的事件：&lt;br&gt;（1）虽然App端可以直接通过调用三方接口获取接口相应的用户信息数据，但是需要检查前端所能获取的Account数据&lt;br&gt;是否与外网部署的回调接口内获取到的数据是否一致，如果一致，那么可以不再根据回调接口响应的数据来走登陆业务，&lt;br&gt;如果说数据存在不一致的情况，那么需要考虑，一个问题：当用户三方信息不存在的时候，此时肯定会走注册流程，那&lt;br&gt;么这个注册流程所保留的三方用户信息是用前端的数据还是后端回调接口所能获取到的数据，是否需要根据数据差异比&lt;br&gt;较来权衡？&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;如果存在数据不一致的情况下，这里需要有一个具体的权衡策略。&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="540" width="660" height="100" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-13" value="事件交互过程涉及需要关注的事件：&lt;br style=&quot;font-size: 18px;&quot;&gt;（1）虽然App端可以直接通过调用三方接口获取接口相应的用户信息数据，但是需要检查前端所能获取的Account数据&lt;br style=&quot;font-size: 18px;&quot;&gt;是否与外网部署的回调接口内获取到的数据是否一致，如果一致，那么可以不再根据回调接口响应的数据来走登陆业务，&lt;br style=&quot;font-size: 18px;&quot;&gt;如果说数据存在不一致的情况，那么需要考虑，一个问题：当用户三方信息不存在的时候，此时肯定会走注册流程，那&lt;br style=&quot;font-size: 18px;&quot;&gt;么这个注册流程所保留的三方用户信息是用前端的数据还是后端回调接口所能获取到的数据，是否需要根据数据差异比&lt;br style=&quot;font-size: 18px;&quot;&gt;较来权衡？&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;如果存在数据不一致的情况下，这里需要有一个具体的权衡策略。&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="65" y="480" width="980" height="140" as="geometry" />
         </mxCell>
         <mxCell id="fTS5IwAaPlBZ80htm119-15" value="Local-Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
           <mxGeometry x="1090" y="30" width="100" height="420" as="geometry" />
@@ -1091,11 +1093,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-28" value="redirect-send-result" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="726" y="128" width="130" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-28" value="3、redirect-send-result" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="716" y="128" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-29" value="redirect-send-result" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="970" y="136" width="130" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-29" value="4、redirect-send-result" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="960" y="136" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fTS5IwAaPlBZ80htm119-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=1.071;entryY=0.523;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -1103,7 +1105,7 @@
             <mxPoint x="932.4850000000001" y="188.20000000000005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-35" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;call-Back-AccountUserInfo&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fTS5IwAaPlBZ80htm119-35" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;2、call-Back-AccountUserInfo&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="112" width="170" height="29" as="geometry" />
         </mxCell>
         <mxCell id="fTS5IwAaPlBZ80htm119-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="fTS5IwAaPlBZ80htm119-9" target="fTS5IwAaPlBZ80htm119-33">
@@ -1114,14 +1116,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-38" value="response-with-Ai4U-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="945" y="162" width="180" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-38" value="5、response-with-Ai4U-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="935" y="162" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-40" value="redirect-send-response" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="715" y="159" width="150" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-40" value="6、redirect-send-response" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="705" y="159" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-43" value="check-userInfo-status" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="709" y="198" width="140" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-43" value="7、check-userInfo-status" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="699" y="198" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fTS5IwAaPlBZ80htm119-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="fTS5IwAaPlBZ80htm119-9" target="fTS5IwAaPlBZ80htm119-1">
           <mxGeometry relative="1" as="geometry">
@@ -1131,20 +1133,57 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-50" value="getAi4U-UserInfo-With-Google-Apple-FacBook-ThirdParty-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="170" y="215" width="380" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-50" value="9、getAi4U-UserInfo-With-Google-Apple-FacBook-ThirdParty-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="226" width="400" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1" source="fTS5IwAaPlBZ80htm119-33" target="fTS5IwAaPlBZ80htm119-1">
+        <mxCell id="fTS5IwAaPlBZ80htm119-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="284.9999999999998" as="sourcePoint" />
+            <mxPoint x="-0.26923076923071676" y="284.9999999999998" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="180" y="270" />
-              <mxPoint x="180" y="270" />
+              <mxPoint x="180" y="285" />
+              <mxPoint x="180" y="285" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fTS5IwAaPlBZ80htm119-52" value="Ai4U-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="350" y="288" width="100" height="30" as="geometry" />
+        <mxCell id="fTS5IwAaPlBZ80htm119-52" value="11、response-with-Ai4U-UserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="256" width="200" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="fTS5IwAaPlBZ80htm119-53" value="Redis" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="241" width="60" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="fTS5IwAaPlBZ80htm119-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="246.53846153846143" as="sourcePoint" />
+            <mxPoint x="815" y="246.49999999999977" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="753" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTS5IwAaPlBZ80htm119-56" value="8、storeTheUserInfo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="706" y="221" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fTS5IwAaPlBZ80htm119-57" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="fTS5IwAaPlBZ80htm119-33" target="fTS5IwAaPlBZ80htm119-53">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="390" as="sourcePoint" />
+            <mxPoint x="750" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="750" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTS5IwAaPlBZ80htm119-58" value="10、readUserInfoData" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="684" y="270" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="0q95t1IA-InYARCxAV9S" name="第 11 页">
+    <mxGraphModel dx="951" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
